@@ -1,0 +1,8 @@
+.error {
+    text-align: center;
+    color: #D071EC;
+    font-size: calc(20px + 20 *(100vw /1920));
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    font-weight: 600;
+}

@@ -1,0 +1,25 @@
+.swiperDesigner {
+    width: calc(250px + 350 * (100vw / 1920));
+    height: calc(450px + 250 * (100vw / 1920));
+    transition: 0.5s;
+    border-radius: 18px;
+
+}
+
+
+
+.swiperSlide {
+    border-radius: 18px;
+}
+
+.swiperSlide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+
+}
+
+.swiperDesigner:hover {
+    transform: scale(1.1);
+}

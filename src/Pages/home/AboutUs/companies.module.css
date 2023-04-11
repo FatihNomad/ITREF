@@ -1,0 +1,244 @@
+.companies {
+    position: relative;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto 0%;
+    position: relative;
+    padding-bottom: 10%;
+
+}
+
+.team_cp {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-top: 5%;
+
+}
+
+
+
+.container::before {
+    content: '';
+    width: 100%;
+    top: -10%;
+    height: 3px;
+    background-color: #D071EC;
+    position: absolute;
+    left: 0;
+}
+
+
+.container::after {
+    content: '';
+    width: 100%;
+    bottom: 0;
+    height: 3px;
+    background-color: #D071EC;
+    position: absolute;
+    left: 0;
+}
+
+.about_co {
+    flex: 0 1 55%;
+}
+
+.container h2 {
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    color: #D071EC;
+    font-size: calc(30px + 10 * (100vw / 1920));
+}
+
+.about_co p {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(15px + 5 * (100vw / 1920));
+
+    line-height: 40px;
+    color: #ffffffd4;
+    margin: 0px 0 7% 0;
+}
+
+.socialmedia {
+    margin-top: 40px;
+    list-style: none;
+}
+
+.our_team {
+
+    flex: 0 1 35%;
+    height: 100%;
+    position: relative;
+}
+
+
+.our_team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 10px solid #C500FF;
+    border-top: 10px solid #C500FF;
+    width: 40%;
+    height: 30%;
+}
+
+.our_team::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 10px solid #C500FF;
+    border-bottom: 10px solid #C500FF;
+    width: 40%;
+    height: 30%;
+}
+
+.boxImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.persons {
+    width: 80%;
+    animation: transformImg 10s infinite;
+    pointer-events: none;
+
+}
+
+
+
+@keyframes transformImg {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+
+    60% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-20px);
+    }
+
+    90% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateY(-20px) rotateY(360deg);
+    }
+}
+
+#team {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 200%;
+    text-align: center;
+}
+
+.text_it {
+    font-size: 35px;
+    color: #d071ec;
+    padding-left: 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+
+
+
+
+@media(max-width:992px) {
+    .container::before {
+        top: -5%;
+    }
+
+    .companies {
+        margin-top: 100px;
+    }
+
+    .team_cp {
+        flex-direction: column;
+    }
+
+    .about_co p {
+        text-align: center;
+    }
+
+    .companies h2 {
+        text-align: center;
+    }
+
+    .blockBg {
+        height: 100px;
+        background: #6D41CA;
+    }
+
+    .our_team {
+        flex: 0 1 20%;
+    }
+
+    .boxImg {
+
+        height: 100%;
+    }
+
+    .persons {
+        width: 50%;
+
+    }
+
+    .our_team::before {
+        top: -10px;
+        left: 20%;
+
+        width: 40%;
+        height: 30%;
+    }
+
+    .our_team::after {
+        bottom: 0px;
+        right: 20%;
+
+        width: 40%;
+        height: 30%;
+
+    }
+}
+
+@media(max-width:768px) {
+
+    .persons {
+        width: 70%;
+    }
+
+    .our_team::before {
+        top: 0px;
+        left: 0%;
+
+    }
+
+    .our_team::after {
+        right: 0%;
+
+    }
+}

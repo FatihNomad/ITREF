@@ -1,0 +1,86 @@
+.shadowBox {
+    background: hsl(0, 0%, 0%, 50%);
+    margin: 5% 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.boxText {
+    flex: 0 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boxImg {
+    flex: 0 1 35%;
+    text-align: center;
+}
+
+.boxImg img {
+    width: 100%;
+}
+
+.boxText h2 {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    color: #D071EC;
+    font-size: calc(30px + 10 * (100vw / 1920));
+
+
+}
+
+.boxText p {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffffc6;
+    font-size: calc(15px + 5 * (100vw / 1920));
+}
+
+.strokeRun {
+    word-spacing: 30px;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #ee5aee, 0 0 40px #ee5aee;
+}
+
+
+
+.moveEffectTransition {
+    transition: 0.2s;
+}
+
+@media(max-width:992px) {
+    .boxText {
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .boxText p {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .boxImg img {
+
+        width: 85%;
+    }
+
+}

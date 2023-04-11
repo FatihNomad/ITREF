@@ -1,0 +1,117 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Open-sans', sans-serif;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo_design {
+    background-color: rgba(0, 0, 0, 0.503);
+    margin-top: 5%;
+}
+
+
+.logoDesign_info {
+    flex: 0 1 45%;
+
+}
+
+.logoDesign_info h2 {
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(23px + 17 *(100vw /1920));
+    color: #D071EC;
+}
+
+.logoDesign_img {
+    flex: 0 1 45%;
+}
+
+.logoDesign_img img {
+    width: 100%;
+    border-radius: 30px;
+
+}
+
+.logoDesign_text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px 0 50px;
+}
+
+.logoDesign_text p {
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(15px + 5* (100vw /1920));
+    line-height: 27px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(20px + 10 *(100vw /1920));
+    color: #D071EC;
+    padding-top: 30px;
+}
+
+.order_btn {
+    margin-top: 30px;
+}
+
+.moveEffectTransition {
+    transition: 0.2s;
+}
+
+@media (max-width:1600px) {
+    .order {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .logoDesign_text {
+        margin: 20px 0 0 0;
+    }
+
+    .order {
+        padding: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .logoDesign_img {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .logoDesign_img img {
+        width: 80%;
+    }
+
+    .logoDesign_info {
+        text-align: center;
+    }
+
+
+
+    .order {
+        align-items: center;
+    }
+
+    .order_btn {
+        text-align: center;
+    }
+}

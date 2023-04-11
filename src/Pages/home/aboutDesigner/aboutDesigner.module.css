@@ -1,0 +1,149 @@
+.box {
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boxWrapper {
+    width: 75%;
+    margin: 0 0 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.boxSwiper,
+.boxText {
+    width: 43%;
+}
+
+.boxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.boxText h2 {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #D071EC;
+    font-size: calc(20px + 20 * (100vw / 1920));
+
+}
+
+.boxText p {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    color: #ffffffd9;
+    text-align: center;
+    font-size: calc(15px + 5 * (100vw / 1920));
+
+}
+
+.btn {
+
+    width: 300px;
+    height: 50px;
+    background: #903FC6;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 30px 0px #903fc6b7;
+
+}
+
+.boxSwiper {
+    display: flex;
+    border-radius: 18px;
+
+}
+
+.parallaxEffectScroll {
+    position: absolute;
+    top: -20%;
+
+    width: 50px;
+    left: 80%;
+
+}
+
+.parallaxEffectScroll2 {
+    position: absolute;
+    top: -60%;
+
+    width: 50px;
+    left: 55%;
+
+}
+
+.parallaxEffectScroll3 {
+    position: absolute;
+    top: -40%;
+
+    width: 20px;
+    left: 30%;
+}
+
+.parallaxEffectScroll4 {
+    position: absolute;
+    top: 0%;
+    width: 30px;
+    left: 40%;
+}
+
+@media(max-width:1570px) {
+    .boxText h2 {
+        font-size: calc(20px + 15 * (100vw / 1920));
+
+    }
+}
+
+@media(max-width:1360px) {
+    .boxWrapper {
+        width: 95%;
+        margin: 0 0 0 5%;
+    }
+}
+
+@media(max-width:992px) {
+
+    .boxWrapper {
+        width: 100%;
+        margin: 0 0 0 0%;
+        flex-direction: column;
+
+    }
+
+    .boxSwiper,
+    .boxText {
+        width: 100%;
+    }
+
+}

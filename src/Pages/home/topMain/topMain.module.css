@@ -1,0 +1,137 @@
+.bg {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url('../../../img/home/bg.webp') center / cover no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 9%;
+}
+
+.title_box {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(31, 31, 31, 0.5);
+
+}
+
+.title_box h1 {
+    font-size: 6em;
+    -webkit-box-reflect: below -19px linear-gradient(transparent, #0004);
+    margin-bottom: 30px;
+}
+
+.title_box span {
+    animation: animate 5s linear infinite;
+}
+
+.title_box span:nth-child(even) {
+    animation-delay: 0.4s;
+
+}
+
+.more_btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.more_btn:hover {
+    font-size: 22px;
+}
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #0d3963;
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #ee5aee,
+            0 0 20px #ee5aee,
+            0 0 40px #ee5aee,
+            0 0 80px #ee5aee,
+            0 0 200px #ee5aee,
+            0 0 400px #ee5aee;
+    }
+
+}
+
+@media(max-width:992px) {
+    .bg {
+        height: 85vh;
+        background-attachment: local;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .button_heder_conect {
+        display: none;
+    }
+
+
+    .title_box h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    @keyframes animate {
+
+        0%,
+        18%,
+        20%,
+        50.1%,
+        60%,
+        65.1%,
+        80%,
+        90.1%,
+        92% {
+            color: #0d3963;
+            text-shadow: none;
+        }
+
+        18.1%,
+        20.1%,
+        30%,
+        50%,
+        60.1%,
+        65%,
+        80.1%,
+        90%,
+        92.1%,
+        100% {
+            color: #fff;
+            text-shadow: 0 0 10px #ee5aee,
+                0 0 40px #ee5aee,
+                0 0 100px #ee5aee,
+                0 0 200px #ee5aee;
+        }
+    }
+}

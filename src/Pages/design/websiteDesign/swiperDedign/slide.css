@@ -1,0 +1,51 @@
+.SwiperDesigner {
+    flex: 0 1 45%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 700px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.SwiperDesigner:hover {
+    transform: scale(1.05);
+}
+
+.SwiperDesigner .swiperCard img {
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    height: calc(400px + 350 *(100vw / 1920));
+}
+
+.SwiperDesigner .swiper-button-next,
+.SwiperDesigner .swiper-button-prev {
+    background: #130E1F;
+    width: calc(40px + 30 * (100vw/1920));
+    height: calc(40px + 30 * (100vw/1920));
+    border-radius: 50%;
+
+}
+
+.SwiperDesigner .swiper-button-next::after,
+.SwiperDesigner .swiper-button-prev::after {
+    width: 0;
+    height: 0;
+    border-top: calc(10px + 10 * (100vw/1920)) solid transparent;
+    border-bottom: calc(10px + 10 * (100vw/1920)) solid transparent;
+    font-size: 0;
+}
+
+.SwiperDesigner .swiper-button-prev::after {
+    border-right: calc(15px + 15 *(100vw / 1920)) solid #903FC6;
+}
+
+.SwiperDesigner .swiper-button-next::after {
+    border-left: calc(15px + 15 *(100vw / 1920)) solid #903FC6;
+}
+
+@media (max-width:992px) {
+    .SwiperDesigner {
+        margin-top: 30px;
+    }
+}

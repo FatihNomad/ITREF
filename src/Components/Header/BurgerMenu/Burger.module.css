@@ -1,0 +1,171 @@
+.burgerMenu {
+    width: 50px;
+    height: 50px;
+}
+
+.menu_btn_active,
+.menu_btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    cursor: pointer;
+    background: rgb(208, 113, 236);
+    border-radius: 10px;
+
+}
+
+
+.menu_btn_active span,
+.menu_btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.2s;
+    z-index: 100;
+    left: 20%;
+    top: 25%;
+}
+
+
+
+.menu_btn span:nth-of-type(2) {
+    top: calc(55% - 5px);
+}
+
+.menu_btn span:nth-of-type(3) {
+    top: calc(55% + 5px);
+}
+
+.menu_btn_active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu_btn_active span:nth-of-type(2) {
+    top: 45%;
+    transform: rotate(45deg);
+}
+
+.menu_btn_active span:nth-of-type(3) {
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+
+.menu_active,
+.menu {
+    position: fixed;
+    width: 80%;
+    top: 0px;
+    right: 0;
+    height: 100vh;
+    background: #270041;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_active {
+    transform: translateX(0);
+
+}
+
+.navi {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    padding: 0 20px;
+    width: 100%;
+    margin-right: 20%;
+}
+
+.navi ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.navi ul li {
+    text-align: end;
+
+}
+
+.navi ul li a {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    transform: translateX(100%);
+
+
+}
+
+.button_heder_conect {
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+.menu nav ul li {
+    list-style-type: none;
+}
+
+.connect_icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.connect_icons a {
+    cursor: pointer;
+    flex: 0 1 40%;
+}
+
+.connect_icons a img {
+    width: 100%;
+}
+
+.activeMenu_item {
+    text-decoration: underline;
+}
+
+.button_heder_conect {
+    width: 170px;
+    height: 50px;
+    background: #903FC6;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.button_heder_conect a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+@media (min-width:992px) {
+    .burgerMenu {
+        display: none;
+    }
+}

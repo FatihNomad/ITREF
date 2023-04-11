@@ -1,0 +1,20 @@
+.main {
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: 5% auto;
+    flex-wrap: wrap;
+
+    display: flex;
+    gap: calc(20px + 40 * (100vw / 1920));
+}
+
+@media (max-width:1050px) {
+    .container {
+        gap: calc(15px + 35 * (100vw / 1920));
+        justify-content: space-between;
+
+    }
+}

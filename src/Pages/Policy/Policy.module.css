@@ -1,0 +1,23 @@
+.main {
+    margin: 5% 0 2% 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ol {
+    list-style: decimal;
+
+}
+
+.ol p,
+.ol li {
+    color: #fff;
+    font-size: calc(15px + 4 * (100vw /1920));
+    font-family: 'Open-sans', sans-serif;
+    margin-bottom: 20px;
+    line-height: 30px;
+    white-space: break-spaces;
+}

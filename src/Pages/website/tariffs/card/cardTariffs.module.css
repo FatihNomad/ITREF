@@ -1,0 +1,131 @@
+.container {
+    background: #270041;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 50px;
+    border: solid 1px #fff;
+}
+
+.name {
+    text-align: start;
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: calc(20px + 20 * (100vw / 1920));
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    flex: 0 1 48%;
+}
+
+.boxLi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 0 0 20px;
+}
+
+.boxLi li {
+    list-style: circle;
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 4 * (100vw / 1920));
+
+    color: #FFFFFF;
+}
+
+.text {
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(16px + 4 * (100vw / 1920));
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.btnAndPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.boxPrice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(20px + 8 * (100vw / 1920));
+    color: #D071EC;
+}
+
+.deadline {
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(18px + 4 * (100vw / 1920));
+    color: #D071EC;
+}
+
+
+
+.btn a {
+    font-family: 'Open-sans', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    color: #FFFFFF;
+
+}
+
+.dopPaketUslug {
+    color: #fff;
+    font-family: 'Open-sans', sans-serif;
+    font: 400;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    margin-bottom: 10px;
+    text-align: start;
+    border-bottom: solid 2px #fff;
+}
+
+@media(max-width:992px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boxPrice {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .btn {
+        align-self: center;
+
+    }
+
+
+}
